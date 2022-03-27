@@ -9,7 +9,8 @@ export class ProjectService {
 
   constructor(private http:HttpClient) { }
 
-  public getProjects(url:string): Observable<any>{
-      return this.http.get(url)
+  public getProject(id:any): Observable<any>{
+    let url=`http://127.0.0.1:3000/projects/${id}`
+    return this.http.get(url)
   }
 }

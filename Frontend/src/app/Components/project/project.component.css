@@ -1,0 +1,6 @@
+.table td.key{
+    font-weight: bold;
+}
+.table td{
+border-top:none;
+}

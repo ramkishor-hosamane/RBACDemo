@@ -1,0 +1,30 @@
+
+<div class="card ">
+    <div class="card-header text-center">
+      {{project.name}}
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <tr>
+                <td class="key">Id</td><td>{{project.id}}</td></tr>
+
+               <tr> <td class="key">Name</td><td>{{project.name}}</td></tr>
+               <tr><td class="key">Progress</td><td>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar" role="progressbar" style="width:{{project.progress}}%;"  aria-valuemin="0" aria-valuemax="100">{{project.progress}}%</div>
+                      </div>
+
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+    <div class="card-footer text-muted ">
+        <div class="row justify-content-around">
+            <button class="col-2 btn btn-info" (click)="onEdit()"> Edit </button>
+            <button class="col-2 btn btn-danger" > Delete </button>
+        </div>
+
+    </div>
+  </div>

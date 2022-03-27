@@ -1,0 +1,5 @@
+<p>dashboard works!</p>
+<a *ngIf="auth_service.isUserAdmin()" routerLink="/users" class="btn btn-primary">Users</a>
+<ul>
+    <li *ngFor="let project of projects"><a routerLink="/projects/{{project[0]}}">{{project[1]}}</a></li>
+</ul>

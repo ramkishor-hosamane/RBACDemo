@@ -1,6 +1,7 @@
 const ROLE = {
   ADMIN: 'admin',
-  BASIC: 'basic'
+  BASIC: 'basic',
+  CLIENT:'client'
 }
 
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
     { id: 1, name: 'Ram', role: ROLE.ADMIN },
     { id: 2, name: 'Samyak', role: ROLE.BASIC },
     { id: 3, name: 'Ritesh', role: ROLE.BASIC }
+
   ],
   projects: [
     { id: 1, name: "Ram's Project", userId: 1 ,progress:89},

@@ -1,0 +1,49 @@
+
+<div class="card ">
+
+    <div class="card-header text-center">
+      Edit {{project.name}}
+    </div>
+    <div class="card-body">
+
+
+        
+        <form class=" justify-content-around generic-form" #ProjectEditForm="ngForm" name="ProjectEditForm"
+        (ngSubmit)="onSubmitProjectEditForm(ProjectEditForm)" novalidate="novalidate">
+        
+        <table class="table">
+            <tr>
+                <td class="key">Id</td><td>
+                    <input  ngModel #id="ngModel" name="id" class="input-field" type="text" placeholder="Id" value="{{project.id}}" >
+
+                    </td></tr>
+
+               <tr> <td class="key">Name</td><td>
+                <input ngModel #name="ngModel" name="name" class="input-field" type="text" placeholder="Name" value="{{project.name}}">
+
+                
+                </td></tr>
+               <tr><td class="key">Progress</td><td>
+                <input ngModel #progress="ngModel" name="progress" class="input-field" type="text" placeholder="Progress" value="{{ProjectEditForm.value.progress}}">
+
+                <div class="form-group">
+<!--                     <label for="formControlRange">Example Range input</label>   
+ -->                    <input type="range" ngModel #progress="ngModel" name="progress"  class="form-control-range" value="">
+                  </div>
+
+
+                   
+
+                </td>
+
+            </tr>
+        </table>
+        <div class="row justify-content-around">
+            <button type="submit" class="col-2 btn btn-primary"> Save</button>
+            <button type="button" class="col-2 btn btn-danger" > Cancel </button>
+        </div>
+    </form>
+
+    </div>
+
+  </div>

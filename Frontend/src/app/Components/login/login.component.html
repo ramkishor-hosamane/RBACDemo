@@ -3,9 +3,8 @@
         
                 <form class="row generic-form" #LoginForm="ngForm" name="LoginForm"
                 (ngSubmit)="onSubmitLoginForm(LoginForm)" novalidate="novalidate">
-                    <input ngModel #userid="ngModel" name="userid" class="input-field" type="text" placeholder="user Id">
+                    <input ngModel #username="ngModel" name="username" class="input-field" type="text" placeholder="username">
                     <input  ngModel #password="ngModel" name="password" class="input-field" type="password" placeholder="Password">
-                
                     <div class="d-flex justify-content-center">
                         <button class="btn btn-primary">Login</button>
                     </div>
